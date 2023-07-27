@@ -1,0 +1,41 @@
+@use 'materials';
+
+body {
+    background-color: materials.$nav-text-color;
+    margin: 0;
+}
+
+.nav-bar {
+    position: relative;
+    flex: 1 1;
+    background: materials.$secondary-color;
+    height: 64px;
+    width: auto;
+    padding: 0 5.5vw;
+
+    .logo_v2 {
+        margin-top: 8px;
+        height: 45px;
+        width: 74.9px;
+    }
+
+    .btns {
+        position: absolute;
+        left: 69.7vw;
+        top: 21px;
+
+        .btn {
+            font-family: materials.$font;
+            font-size: 16px;
+            border: none;
+            margin: 0 12px;
+        }
+    
+        .btn:nth-child(1) {
+            color:  materials.$nav-text-color;
+            font-weight: 500;
+            background: none;
+        }
+    }
+
+}

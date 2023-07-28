@@ -3,6 +3,7 @@
 body {
     background-color: materials.$nav-text-color;
     margin: 0;
+    scroll-behavior: smooth;
 }
 
 .nav-bar {
@@ -13,7 +14,7 @@ body {
     padding: 0 5.5vw;
 
     .logo_v2-container {
-        width: 830px;
+        width: 85%;
 
         .logo_v2 {
             margin-top: 8px;
@@ -52,27 +53,32 @@ body {
 
 }
 
+%heading-style {
+    font-family: materials.$font;
+    font-size: 41px;
+    font-weight: 800;
+    color: #040404;
+}
+
 .intro-container {
     display: flex;
     align-items: center;
-    padding: 60px 50px;
-    background: yellow;
+    column-gap: 60px;
+    height: 517px;
+    padding: 57px 0;
+    position: relative;
 
     .main-intro {
         display: flex;
-        text-align: center;
+        position: absolute;
         flex-direction: column;
-        margin-right: 30px;
+        text-align: center;
+        right: 50%;
+        margin-left: 50px;
 
-        %tagline-style {
-            font-family: materials.$font;
-            color: #040404;
-        }
 
         .tagline {
-            @extend %tagline-style;
-            font-size: 41px;
-            font-weight: 800;
+            @extend %heading-style;
             font-style: italic;
 
             .color-emphasize {
@@ -86,7 +92,7 @@ body {
         }
 
         .sub-tagline {
-            @extend %tagline-style;
+            @extend %heading-style;
             font-size: 16px;
             font-weight: 500;
 
@@ -98,11 +104,36 @@ body {
     }
 
     .logo-intro {
+        position: absolute;
+        left: 55%;
+        margin-right: 30px;
 
         .skyscraper {
-            width: 549px;
-            height: 506px;
+            width: 95%;
+            height: 96%;
             border-radius: 40px;
+            box-shadow: -10px 10px 8px materials.$shadow;
         }
+    }
+}
+
+.smm-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 28px 0;
+    background: materials.$primary-color;
+
+    .smm-heading {
+        @extend %heading-style;
+        color: materials.$secondary-color;
+        margin-bottom: 60px;
+    }
+
+    .ads-sample {
+        width: 80%;
+        max-width: 1120px;
+        margin-bottom: 73px;
     }
 }

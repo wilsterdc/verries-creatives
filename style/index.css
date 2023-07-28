@@ -5,22 +5,23 @@ body {
 }
 
 .nav-bar {
-  position: relative;
   display: flex;
   background: #6437A0;
   height: 64px;
   width: auto;
   padding: 0 5.5vw;
 }
-.nav-bar .logo_v2 {
+.nav-bar .logo_v2-container {
+  width: 830px;
+}
+.nav-bar .logo_v2-container .logo_v2 {
   margin-top: 8px;
   height: 45px;
   width: 74.9px;
 }
 .nav-bar .btns {
-  position: absolute;
-  left: 69.7vw;
-  top: 18px;
+  display: flex;
+  align-items: center;
 }
 .nav-bar .btns .btn {
   font-family: "Montserrat", sans-serif;
@@ -44,19 +45,43 @@ body {
 .intro-container {
   display: flex;
   align-items: center;
-  height: 627px;
-  background: #DEACF5;
+  padding: 60px 50px;
+  background: yellow;
 }
 .intro-container .main-intro {
   display: flex;
-  align-items: center;
+  text-align: center;
   flex-direction: column;
-  width: 700px;
-  background: #6437A0;
+  margin-right: 30px;
 }
-.intro-container .skyscaper {
-  border-radius: 30px;
-  overflow: hidden;
+.intro-container .main-intro .sub-tagline, .intro-container .main-intro .tagline {
+  font-family: "Montserrat", sans-serif;
+  color: #040404;
+}
+.intro-container .main-intro .tagline {
+  font-size: 41px;
+  font-weight: 800;
+  font-style: italic;
+}
+.intro-container .main-intro .tagline .color-emphasize {
+  color: #6437A0;
+}
+.intro-container .main-intro .tagline .bg-emphasize {
+  border-radius: 10px;
+  background: #DEACF5;
+}
+.intro-container .main-intro .sub-tagline {
+  font-size: 16px;
+  font-weight: 500;
+}
+.intro-container .main-intro .sub-tagline .sub-color-emphasize {
+  color: #6437A0;
+  font-weight: 700;
+}
+.intro-container .logo-intro .skyscraper {
+  width: 549px;
+  height: 506px;
+  border-radius: 40px;
 }
 
 /*# sourceMappingURL=index.css.map */

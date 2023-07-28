@@ -6,24 +6,27 @@ body {
 }
 
 .nav-bar {
-    position: relative;
     display: flex;
     background: materials.$secondary-color;
     height: 64px;
     width: auto;
     padding: 0 5.5vw;
 
-    .logo_v2 {
-        margin-top: 8px;
-        height: 45px;
-        width: 74.9px;
+    .logo_v2-container {
+        width: 830px;
+
+        .logo_v2 {
+            margin-top: 8px;
+            height: 45px;
+            width: 74.9px;
+        }
     }
 
+    
+
     .btns {
-        position: absolute;
-        // display: flex;
-        left: 69.7vw;
-        top: 18px;
+        display: flex;
+        align-items: center;
 
         .btn {
             font-family: materials.$font;
@@ -52,20 +55,54 @@ body {
 .intro-container {
     display: flex;
     align-items: center;
-    height: 627px;
-    background: materials.$primary-color;
+    padding: 60px 50px;
+    background: yellow;
 
     .main-intro {
         display: flex;
-        align-items: center;
+        text-align: center;
         flex-direction: column;
-        width: 700px;
-        background: materials.$secondary-color;
+        margin-right: 30px;
 
+        %tagline-style {
+            font-family: materials.$font;
+            color: #040404;
+        }
+
+        .tagline {
+            @extend %tagline-style;
+            font-size: 41px;
+            font-weight: 800;
+            font-style: italic;
+
+            .color-emphasize {
+                color: materials.$secondary-color;
+            }
+
+            .bg-emphasize {
+                border-radius: 10px;
+                background: materials.$primary-color;
+            }
+        }
+
+        .sub-tagline {
+            @extend %tagline-style;
+            font-size: 16px;
+            font-weight: 500;
+
+            .sub-color-emphasize {
+                color: materials.$secondary-color;
+                font-weight: 700;
+            }
+        }
     }
 
-    .skyscaper {
-        border-radius: 30px;
-        overflow: hidden;
+    .logo-intro {
+
+        .skyscraper {
+            width: 549px;
+            height: 506px;
+            border-radius: 40px;
+        }
     }
 }

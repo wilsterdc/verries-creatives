@@ -1,8 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,700;1,600;1,800&family=Playfair+Display+SC:wght@400;700&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #f4f4f4;
   margin: 0;
-  scroll-behavior: smooth;
 }
 
 .nav-bar {
@@ -29,6 +32,7 @@ body {
   font-size: 16px;
   border: none;
   margin: 0 12px;
+  text-decoration: none;
 }
 .nav-bar .btns .btn:nth-child(1), .nav-bar .btns .btn:nth-child(2) {
   color: #f4f4f4;

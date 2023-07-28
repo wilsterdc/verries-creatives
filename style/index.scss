@@ -1,9 +1,12 @@
 @use 'materials';
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: materials.$nav-text-color;
     margin: 0;
-    scroll-behavior: smooth;
 }
 
 .nav-bar {
@@ -34,6 +37,7 @@ body {
             font-size: 16px;
             border: none;
             margin: 0 12px;
+            text-decoration: none;
         }
     
         .btn:nth-child(1), .btn:nth-child(2) {

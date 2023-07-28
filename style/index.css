@@ -6,7 +6,7 @@ body {
 
 .nav-bar {
   position: relative;
-  flex: 1 1;
+  display: flex;
   background: #6437A0;
   height: 64px;
   width: auto;
@@ -20,7 +20,7 @@ body {
 .nav-bar .btns {
   position: absolute;
   left: 69.7vw;
-  top: 21px;
+  top: 18px;
 }
 .nav-bar .btns .btn {
   font-family: "Montserrat", sans-serif;
@@ -28,10 +28,35 @@ body {
   border: none;
   margin: 0 12px;
 }
-.nav-bar .btns .btn:nth-child(1) {
+.nav-bar .btns .btn:nth-child(1), .nav-bar .btns .btn:nth-child(2) {
   color: #f4f4f4;
   font-weight: 500;
   background: none;
+}
+.nav-bar .btns .btn:nth-child(3) {
+  color: #f4f4f4;
+  font-weight: 700;
+  background: #28104E;
+  border-radius: 5px;
+  padding: 4px 6px;
+}
+
+.intro-container {
+  display: flex;
+  align-items: center;
+  height: 627px;
+  background: #DEACF5;
+}
+.intro-container .main-intro {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 700px;
+  background: #6437A0;
+}
+.intro-container .skyscaper {
+  border-radius: 30px;
+  overflow: hidden;
 }
 
 /*# sourceMappingURL=index.css.map */

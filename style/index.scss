@@ -7,7 +7,7 @@ body {
 
 .nav-bar {
     position: relative;
-    flex: 1 1;
+    display: flex;
     background: materials.$secondary-color;
     height: 64px;
     width: auto;
@@ -21,8 +21,9 @@ body {
 
     .btns {
         position: absolute;
+        // display: flex;
         left: 69.7vw;
-        top: 21px;
+        top: 18px;
 
         .btn {
             font-family: materials.$font;
@@ -31,11 +32,40 @@ body {
             margin: 0 12px;
         }
     
-        .btn:nth-child(1) {
+        .btn:nth-child(1), .btn:nth-child(2) {
             color:  materials.$nav-text-color;
             font-weight: 500;
             background: none;
         }
+
+        .btn:nth-child(3) {
+            color:  materials.$nav-text-color;
+            font-weight: 700;
+            background: materials.$button-color;
+            border-radius: 5px;
+            padding: 4px 6px;
+        }
     }
 
+}
+
+.intro-container {
+    display: flex;
+    align-items: center;
+    height: 627px;
+    background: materials.$primary-color;
+
+    .main-intro {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 700px;
+        background: materials.$secondary-color;
+
+    }
+
+    .skyscaper {
+        border-radius: 30px;
+        overflow: hidden;
+    }
 }

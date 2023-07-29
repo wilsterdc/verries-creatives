@@ -39,19 +39,35 @@ body {
   color: #f4f4f4;
   font-weight: 500;
   background: none;
+  padding: 5px 10px;
+  transform: perspective(1px) translateZ(0);
 }
 .nav-bar .btns .btn:nth-child(1):hover, .nav-bar .btns .btn:nth-child(2):hover {
   color: #6437A0;
-  background: #f4f4f4;
+}
+.nav-bar .btns .btn:nth-child(1):hover::before, .nav-bar .btns .btn:nth-child(2):hover::before {
+  transform: scaleY(1);
+}
+.nav-bar .btns .btn:nth-child(1):before, .nav-bar .btns .btn:nth-child(2):before {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: "";
+  transition: 0.3s ease-out;
+  transform: scaleX(0);
+  transform-origin: 50% 0;
   border-radius: 5px;
-  cursor: pointer;
+  background: #f4f4f4;
 }
 .nav-bar .btns .btn:nth-child(3) {
   color: #f4f4f4;
   font-weight: 700;
   background: #28104E;
   border-radius: 5px;
-  padding: 4px 6px;
+  padding: 5px 10px;
 }
 .nav-bar .btns .btn:nth-child(3) span {
   cursor: pointer;

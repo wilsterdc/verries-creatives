@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,700;1,600;1,800&family=Playfair+Display+SC:wght@400;700&display=swap");
 html {
   scroll-behavior: smooth;
@@ -32,12 +33,18 @@ body {
   font-size: 16px;
   border: none;
   margin: 0 12px;
-  text-decoration: none;
+  height: 35px;
 }
 .nav-bar .btns .btn:nth-child(1), .nav-bar .btns .btn:nth-child(2) {
   color: #f4f4f4;
   font-weight: 500;
   background: none;
+}
+.nav-bar .btns .btn:nth-child(1):hover, .nav-bar .btns .btn:nth-child(2):hover {
+  color: #6437A0;
+  background: #f4f4f4;
+  border-radius: 5px;
+  cursor: pointer;
 }
 .nav-bar .btns .btn:nth-child(3) {
   color: #f4f4f4;
@@ -46,12 +53,52 @@ body {
   border-radius: 5px;
   padding: 4px 6px;
 }
+.nav-bar .btns .btn:nth-child(3) span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.nav-bar .btns .btn:nth-child(3) span:after {
+  content: "☏";
+  position: absolute;
+  opacity: 0;
+  top: -3px;
+  right: 20px;
+  transition: 0.5s;
+}
+.nav-bar .btns .btn:nth-child(3):hover span {
+  padding-right: 25px;
+}
+.nav-bar .btns .btn:nth-child(3):hover span:after {
+  opacity: 1;
+  right: 0;
+}
 
-.smm-container .smm-heading, .intro-container .main-intro .sub-tagline, .intro-container .main-intro .tagline {
+.intro-container .main-intro .sub-tagline, .intro-container .main-intro .tagline, .webdev-container h1, .smm-container h1 {
   font-family: "Montserrat", sans-serif;
   font-size: 41px;
   font-weight: 800;
   color: #040404;
+}
+
+.webdev-container, .smm-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  padding: 28px 0;
+}
+
+.webdev-container h1, .smm-container h1 {
+  color: #6437A0;
+  margin-bottom: 60px;
+}
+
+.webdev-container img, .smm-container img {
+  width: 80%;
+  max-width: 1120px;
+  margin-bottom: 73px;
 }
 
 .intro-container {
@@ -101,21 +148,11 @@ body {
 }
 
 .smm-container {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
-  padding: 28px 0;
   background: #DEACF5;
 }
-.smm-container .smm-heading {
-  color: #6437A0;
-  margin-bottom: 60px;
-}
-.smm-container .ads-sample {
-  width: 80%;
-  max-width: 1120px;
-  margin-bottom: 73px;
+.webdev-container img {
+  width: 43%;
+  box-shadow: -10px 10px 8px #B8B8B8;
 }
 
 /*# sourceMappingURL=index.css.map */

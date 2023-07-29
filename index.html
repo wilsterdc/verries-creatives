@@ -12,12 +12,12 @@
             <img class="logo_v2" src="./img/Logo(v2).jpeg" alt="Verries Creatives">
         </div>
         <div class="btns">
-            <button class="btn" onclick="document.getElementById('services').scrollIntoView()">SERVICES</button>
-            <button class="btn" >ABOUT</button>
-            <button class="btn" >CONTACT</button>
+            <button class="btn" onclick="document.getElementById('services').scrollIntoView()"><span>SERVICES</span></button>
+            <button class="btn" ><span>ABOUT</span></button>
+            <button class="btn" ><span>CONTACT</span></button>
         </div>
     </nav>
-    <section>
+    <section id="introduction">
         <div class="intro-container">
             <div class="main-intro">
                 <h1 class="tagline">
@@ -32,12 +32,19 @@
             </div>
         </div>
     </section>
-    <section>
-        <div class="smm-container" id="services">
-            <h1 class="smm-heading">Social Media Manager</h1>
-            <img class="ads-sample" src="./img/SocMedMngr.png" alt="Ads">
-        </div>
+    <section id="services">
+        <section>
+            <div class="smm-container">
+                <h1 class="smm-heading">Social Media Manager</h1>
+                <img class="ads-sample" src="./img/SocMedMngr.png" alt="Ads">
+            </div>
+        </section>
+        <section>
+            <div class="webdev-container">
+                <h1>Website Development</h1>
+                <img src="./img/WebDev.png" alt="Sample of Website">
+            </div>
+        </section>
     </section>
-    
 </body>
 </html>

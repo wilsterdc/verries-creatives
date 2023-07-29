@@ -54,9 +54,9 @@ body {
 
             &:hover::before {
                 transform: scaleY(1);
-              }
+            }
             
-              &:before {
+            &:before {
                 position: absolute;
                 z-index: -1;
                 top: 0;
@@ -69,7 +69,7 @@ body {
                 transform-origin: 50% 0;
                 border-radius: 5px;
                 background: materials.$nav-text-color;
-              }
+            }
         }
 
         .btn:nth-child(3) {
@@ -111,7 +111,7 @@ body {
 
 }
 
-%heading-style {
+%intro-style {
     font-family: materials.$font;
     font-size: 41px;
     font-weight: 800;
@@ -123,11 +123,12 @@ body {
     flex-direction: column;
     text-align: center;
     align-items: center;
+    justify-content: center;
     padding: 28px 0;
 }
 
-%services-headings {
-    @extend %heading-style;
+%heading-styles {
+    @extend %intro-style;
     color: materials.$secondary-color;
     margin-bottom: 60px;
 }
@@ -139,16 +140,16 @@ body {
 }
 
 .intro-container {
+    position: relative;
     display: flex;
     align-items: center;
     column-gap: 60px;
     height: 517px;
     padding: 57px 0;
-    position: relative;
 
     .main-intro {
-        display: flex;
         position: absolute;
+        display: flex;
         flex-direction: column;
         text-align: center;
         right: 50%;
@@ -156,7 +157,7 @@ body {
 
 
         .tagline {
-            @extend %heading-style;
+            @extend %intro-style;
             font-style: italic;
 
             .color-emphasize {
@@ -170,7 +171,7 @@ body {
         }
 
         .sub-tagline {
-            @extend %heading-style;
+            @extend %intro-style;
             font-size: 16px;
             font-weight: 500;
 
@@ -200,7 +201,7 @@ body {
     background: materials.$primary-color;
 
     h1 {
-        @extend %services-headings;  
+        @extend %heading-styles;  
     }
 
     img {
@@ -212,7 +213,7 @@ body {
     @extend %column-container;
 
     h1 {
-        @extend %services-headings;
+        @extend %heading-styles;
     }
 
     img {
@@ -220,4 +221,52 @@ body {
         width: 43%;
         box-shadow: materials.$shadow;
     }
+}
+
+.ecs-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 60px;
+    height: 583px;
+    padding: 57px 60px;
+    background: materials.$primary-color;
+
+    .ecs {
+        width: 30%;
+    }
+
+    .ecs-sample {
+        width: 706px;
+        height: 506px;
+        border-radius: 20px;
+        background: materials.$nav-text-color;
+    }
+}
+
+.about-us-container {
+    @extend %column-container;
+    row-gap: 40px;
+    padding: 46px 60px;
+    background: materials.$secondary-color;
+
+    h1 {
+        @extend %heading-styles;
+        margin-bottom: 0; 
+        color: materials.$primary-color;
+    }
+
+    p {
+        font-family: materials.$font;
+        font-size: 21px;
+        font-weight: 800;
+        margin-bottom: 84px;
+        color: materials.$primary-color;
+    }
+
+    img {
+        width: 35%;
+        margin-bottom: 40px;
+    }
+
 }

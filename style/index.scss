@@ -219,6 +219,7 @@ body {
     img {
         @extend %services-sample;
         width: 43%;
+        max-width: 700px;
         box-shadow: materials.$shadow;
     }
 }
@@ -234,6 +235,7 @@ body {
 
     .ecs {
         width: 30%;
+        max-width: 500px;
     }
 
     .ecs-sample {

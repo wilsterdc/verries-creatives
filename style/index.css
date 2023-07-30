@@ -169,6 +169,7 @@ body {
 }
 .webdev-container img {
   width: 43%;
+  max-width: 700px;
   box-shadow: -10px 10px 8px #B8B8B8;
 }
 
@@ -183,6 +184,7 @@ body {
 }
 .ecs-container .ecs {
   width: 30%;
+  max-width: 500px;
 }
 .ecs-container .ecs-sample {
   width: 706px;

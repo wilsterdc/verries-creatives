@@ -272,3 +272,38 @@ body {
     }
 
 }
+
+.contact-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    column-gap: 150px;
+    padding: 30px;
+    background: materials.$button-color;
+
+    img {
+        width: 150%;
+    }
+
+    // div {
+    //     display: grid;
+    //     grid-template-columns: auto auto;
+    //     column-gap: 15px; 
+    //     text-align: left;
+    //     row-gap: 8px;
+    //     justify-content: center;
+    // }
+
+    h1 {
+        @extend %heading-styles;
+        color: materials.$primary-color;
+        margin: auto 0;
+    }
+
+    a {
+        color: materials.$primary-color;
+        text-decoration: none;
+    }
+}

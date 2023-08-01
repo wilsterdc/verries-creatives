@@ -91,7 +91,7 @@ body {
   right: 0;
 }
 
-.intro-container .main-intro .sub-tagline, .intro-container .main-intro .tagline, .about-us-container h1, .webdev-container h1, .smm-container h1 {
+.intro-container .main-intro .sub-tagline, .intro-container .main-intro .tagline, .contact-container h1, .about-us-container h1, .webdev-container h1, .smm-container h1 {
   font-family: "Montserrat", sans-serif;
   font-size: 41px;
   font-weight: 800;
@@ -107,7 +107,7 @@ body {
   padding: 28px 0;
 }
 
-.about-us-container h1, .webdev-container h1, .smm-container h1 {
+.contact-container h1, .about-us-container h1, .webdev-container h1, .smm-container h1 {
   color: #6437A0;
   margin-bottom: 60px;
 }
@@ -212,6 +212,36 @@ body {
 .about-us-container img {
   width: 35%;
   margin-bottom: 40px;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  column-gap: 150px;
+  padding: 30px;
+  background: #28104E;
+}
+.contact-container img {
+  width: 15%;
+}
+.contact-container div {
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 15px;
+  text-align: left;
+  row-gap: 8px;
+  justify-content: center;
+}
+.contact-container h1 {
+  color: #DEACF5;
+  margin: auto 0;
+}
+.contact-container a {
+  color: #DEACF5;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=index.css.map */

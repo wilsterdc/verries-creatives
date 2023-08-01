@@ -284,26 +284,28 @@ body {
     background: materials.$button-color;
 
     img {
-        width: 150%;
+        width: 15%;
     }
 
-    // div {
-    //     display: grid;
-    //     grid-template-columns: auto auto;
-    //     column-gap: 15px; 
-    //     text-align: left;
-    //     row-gap: 8px;
-    //     justify-content: center;
-    // }
+    div {
+        display: flex;
+        flex-direction: column;
+        column-gap: 15px; 
+        text-align: left;
+        row-gap: 8px;
+
+        a {
+            display: flex;
+            align-items: center;
+            column-gap: 8px;
+            color: materials.$primary-color;
+            text-decoration: none;
+        }
+    }
 
     h1 {
         @extend %heading-styles;
         color: materials.$primary-color;
         margin: auto 0;
-    }
-
-    a {
-        color: materials.$primary-color;
-        text-decoration: none;
     }
 }

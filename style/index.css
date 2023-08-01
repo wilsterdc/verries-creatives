@@ -228,20 +228,22 @@ body {
   width: 15%;
 }
 .contact-container div {
-  display: grid;
-  grid-template-columns: auto auto;
+  display: flex;
+  flex-direction: column;
   column-gap: 15px;
   text-align: left;
   row-gap: 8px;
-  justify-content: center;
+}
+.contact-container div a {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+  color: #DEACF5;
+  text-decoration: none;
 }
 .contact-container h1 {
   color: #DEACF5;
   margin: auto 0;
-}
-.contact-container a {
-  color: #DEACF5;
-  text-decoration: none;
 }
 
 /*# sourceMappingURL=index.css.map */

@@ -263,11 +263,14 @@ body {
         font-size: 21px;
         font-weight: 800;
         margin-bottom: 84px;
+        max-width: 1120px;
         color: materials.$primary-color;
     }
 
     img {
         width: 35%;
+        max-width: 500px;
+        min-width: 300px;
         margin-bottom: 40px;
     }
 
@@ -279,12 +282,12 @@ body {
     align-items: center;
     text-align: center;
     justify-content: center;
-    column-gap: 150px;
+    column-gap: 10%;
     padding: 30px;
     background: materials.$button-color;
 
     img {
-        width: 15%;
+        width: 150px;
     }
 
     div {

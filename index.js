@@ -14,14 +14,12 @@ const MIME_TYPES = {
     jpeg: "image/jpeg"
 };
 
-const STATIC_PATH = path.join(process.cwd());
+const STATIC_PATH = process.cwd();
 
 const toBool = [() => true, () => false];
 
 const prepareFile = async (url) => {
-    const paths = [STATIC_PATH, url];
-    if (url.endsWith("/")) paths.push("index.html");
-    const filePath = path.join(...paths);
+    const filePath = path.join(STATIC_PATH, url.endsWith("/") ? url + "index.html" : url);
     const pathTraversal = !filePath.startsWith(STATIC_PATH);
     const exists = await fs.promises.access(filePath).then(...toBool);
     const found = !pathTraversal && exists;
